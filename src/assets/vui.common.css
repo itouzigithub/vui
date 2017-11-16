@@ -1,0 +1,79 @@
+/* ------------------------------------ input ------------------------------------ */
+.ipt-row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.ipt-icon {
+  width: 36px;
+  position: relative;
+}
+.ipt-icon i {
+	display: inline-block;
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+  text-align: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.ipt-wrap {
+	width: 0;
+	flex-grow: 1;
+}
+.ipt-wrap input {
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+}
+.ipt-vali {
+	width: 80px;
+}
+
+/* ------------------------------------ hairline ------------------------------------ */
+.hair-top:before,
+.hair-left:before,
+.hair-bottom:after,
+.hair-right:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #ddd;
+}
+.hair-top:before {
+  width: 100%; height: 1px;
+  top: 0; left: 0;
+  transform: scaleY(.5);
+}
+.hair-left:before {
+  height: 100%; width: 1px;
+  top: 0; left: 0;
+  transform: scaleX(.5);
+}
+.hair-bottom:after {
+  width: 100%; height: 1px;
+  bottom: 0; left: 0;
+  transform: scaleY(.5);
+}
+.hair-right:after {
+  height: 100%; width: 1px;
+  top: 0; right: 0;
+  transform: scaleX(.5);
+}
+
+.hair-border:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  left: 0;
+  top: 0;
+  border: 1px solid #ddd;
+  transform-origin: top left;
+  transform: scale(.5, .5);
+}
