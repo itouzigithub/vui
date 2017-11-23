@@ -31,6 +31,9 @@
       <li>
         <router-link to="numberFormat">数字号码格式化</router-link>
       </li>
+      <li>
+        <router-link to="carousel-list">平滑滚动轮播</router-link>
+      </li>
     </ul>
     <br>
     <h3>移动端组件体系</h3>
@@ -85,6 +88,7 @@ export default {
     width: 100%;
   }
   li {
-    padding-bottom: 5px;
+    padding-bottom: 6px;
+    font-size: 15px;
   }
 </style>

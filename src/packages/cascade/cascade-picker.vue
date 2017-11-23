@@ -16,7 +16,7 @@
         </div>
       </div>
 
-      <ul class="picker-options js-picker-options"
+      <ul class="picker-options"
         v-for="(slot, i) in slots"
         v-show="tabIndex === i"
         @click="select($event, 0)">

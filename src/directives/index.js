@@ -38,3 +38,69 @@ export var increase = {
     setTimeout(tick, 20)
   }
 }
+
+export var translateX = {
+  inserted (el, binding) {
+    var width = el.getBoundingClientRect().width;
+    var speed = binding.value || 100;
+    
+    function tick (node) {
+      if (!node) {
+        node = el.firstElementChild;
+      }
+      // style 存在说明仍然在运行中
+      if (node.style.transform) {
+        setTimeout(function () {
+          tick(node);
+        }, 1000)
+        return;
+      }
+      var w = node.getBoundingClientRect().width + 20;
+      var W = width + w;
+      var t1 = w / speed;
+      var t2 = W / speed;
+      node.style = 'transform: translateX(-' + W + 'px);' + 'webkitTransform: translateX(-' + W + 'px);transition-duration: ' + t2 + 's';
+      setTimeout(function () {
+        tick(node.nextElementSibling)
+      }, t1 * 1000);
+      setTimeout(function () {
+        node.style = '';
+      }, t2 * 1000);
+    }
+
+    tick()
+  }
+}
+
+export var translateY = {
+  inserted (el, binding) {
+    var height = el.getBoundingClientRect().height;
+    var speed = binding.value || 100;
+    
+    function tick (node) {
+      if (!node) {
+        node = el.firstElementChild;
+      }
+      // style 存在说明仍然在运行中
+      if (node.style.transform) {
+        setTimeout(function () {
+          tick(node);
+        }, 1000)
+        return;
+      }
+      var h = node.getBoundingClientRect().height;
+      var H = height + h;
+      var t1 = h / speed;
+      var t2 = H / speed;
+      node.style = 'transform: translateY(-' + H + 'px);' + 'webkitTransform: translateY(-' + H + 'px);transition-duration: ' + t2 + 's';
+      setTimeout(function () {
+        tick(node.nextElementSibling)
+      }, t1 * 1000);
+      setTimeout(function () {
+        node.style = '';
+      }, t2 * 1000);
+    }
+
+    tick()
+  }
+}

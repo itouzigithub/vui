@@ -6,6 +6,7 @@ const hairline = resolve => require(['@/packages/hairline/example.vue'], resolve
 const ipt = resolve => require(['@/packages/input/example.vue'], resolve)
 const cascade = resolve => require(['@/packages/cascade/example.vue'], resolve)
 const banner = resolve => require(['@/packages/banner/example.vue'], resolve)
+const carouselList = resolve => require(['@/packages/carousel-list/example.vue'], resolve)
 
 const increase = resolve => require(['@/components/number-increase.vue'], resolve)
 const dateFormat = resolve => require(['@/components/date-format.vue'], resolve)
@@ -48,6 +49,11 @@ var router = new Router({
       path: '/banner',
       name: 'banner',
       component: banner
+    },
+    {
+      path: '/carousel-list',
+      name: 'carousel-list',
+      component: carouselList
     },
     {
       path: '/increase',

@@ -25,8 +25,9 @@ pics: [{
     <br>
     <p>slot 可接收两个参数：length-图片数量，order-当前图片是第几张图，从 1 算起</p>
     <p>可利用这两个参数控制焦点的展示</p>
-    <p>注意需使用<a href="https://cn.vuejs.org/v2/guide/components.html#作用域插槽" target="_blank">作用域插槽</a></p>
-    <p>注意加上 v-if="pics.length > 1" 的条件</p>
+    <p>注意：需使用<a href="https://cn.vuejs.org/v2/guide/components.html#作用域插槽" target="_blank">作用域插槽</a></p>
+    <p>注意：需加上 v-if="pics.length > 1" 的条件</p>
+    <p>注意：Vue2.5+ 中 scope="props" 应写为 slot-scope="props"！！！</p>
 
 <pre><code>&lt;banner :pics="pics" height="350px">
   &lt;template scope="props" v-if="pics.length > 1">
