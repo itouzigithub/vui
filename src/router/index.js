@@ -6,11 +6,12 @@ const hairline = resolve => require(['@/packages/hairline/example.vue'], resolve
 const ipt = resolve => require(['@/packages/input/example.vue'], resolve)
 const cascade = resolve => require(['@/packages/cascade/example.vue'], resolve)
 const banner = resolve => require(['@/packages/banner/example.vue'], resolve)
-const carouselList = resolve => require(['@/packages/carousel-list/example.vue'], resolve)
 
 const increase = resolve => require(['@/components/number-increase.vue'], resolve)
 const dateFormat = resolve => require(['@/components/date-format.vue'], resolve)
 const numberFormat = resolve => require(['@/components/number-format.vue'], resolve)
+const carouselList = resolve => require(['@/packages/carousel-list/example.vue'], resolve)
+const imgGenerator = resolve => require(['@/packages/img-generator/example.vue'], resolve)
 
 const display = resolve => require(['@/components/catalog/display.vue'], resolve)
 const reminder = resolve => require(['@/components/catalog/reminder.vue'], resolve)
@@ -51,11 +52,6 @@ var router = new Router({
       component: banner
     },
     {
-      path: '/carousel-list',
-      name: 'carousel-list',
-      component: carouselList
-    },
-    {
       path: '/increase',
       name: 'increase',
       component: increase
@@ -69,6 +65,16 @@ var router = new Router({
       path: '/numberFormat',
       name: 'numberFormat',
       component: numberFormat
+    },
+    {
+      path: '/carousel-list',
+      name: 'carousel-list',
+      component: carouselList
+    },
+    {
+      path: '/img-generator',
+      name: 'img-generator',
+      component: imgGenerator
     },
     {
       path: '/display',

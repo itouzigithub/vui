@@ -34,6 +34,9 @@
       <li>
         <router-link to="carousel-list">平滑滚动轮播</router-link>
       </li>
+      <li>
+        <router-link to="img-generator">图片生成</router-link>
+      </li>
     </ul>
     <br>
     <h3>移动端组件体系</h3>
