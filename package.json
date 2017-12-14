@@ -1,9 +1,9 @@
 {
-  "name": "@bison1994/vui",
+  "name": "@itouzi/vui",
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "bison1994 <942915554@qq.com>",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "npm run dev",

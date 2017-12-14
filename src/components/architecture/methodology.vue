@@ -58,5 +58,10 @@
 		<p>组件该如何加载？</p>
 		<p>组件之间如何通信？</p>
 		<p>组件如何满足定制化需求？</p>
+
+		<br>
+		<br>
+		<h3>其它</h3>
+		<p><a href="https://zhuanlan.zhihu.com/p/31117272">可用性</a></p>
 	</section>
 </template>

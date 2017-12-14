@@ -44,6 +44,9 @@
     <div class="item2" v-for="val in list">{{ val }}</div>
   </div>
 
+  <br>
+  <p>该方法用到了定时器，然而当网页进入后台运行状态时，定时器会默认关闭，就可能因时间线紊乱导致文本重叠</p>
+
   </section>
 </template>
 

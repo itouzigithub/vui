@@ -48,8 +48,7 @@ export var translateX = {
       if (!node) {
         node = el.firstElementChild;
       }
-      // style 存在说明仍然在运行中
-      if (node.style.transform) {
+      if (+node.getAttribute('status') === 1) {
         setTimeout(function () {
           tick(node);
         }, 1000)
@@ -59,12 +58,17 @@ export var translateX = {
       var W = width + w;
       var t1 = w / speed;
       var t2 = W / speed;
-      node.style = 'transform: translateX(-' + W + 'px);' + 'webkitTransform: translateX(-' + W + 'px);transition-duration: ' + t2 + 's';
+      var style = '-webkit-transform: translateX(-' + W + 'px);' + 'transform: translateX(-' + W + 'px);transition-duration: ' + t2 + 's';
+      node.setAttribute('style', style);
+      node.setAttribute('status', 1);
+
       setTimeout(function () {
         tick(node.nextElementSibling)
       }, t1 * 1000);
+
       setTimeout(function () {
-        node.style = '';
+        node.setAttribute('style', '');
+        node.setAttribute('status', 0);
       }, t2 * 1000);
     }
 
@@ -81,8 +85,7 @@ export var translateY = {
       if (!node) {
         node = el.firstElementChild;
       }
-      // style 存在说明仍然在运行中
-      if (node.style.transform) {
+      if (+node.getAttribute('status') === 1) {
         setTimeout(function () {
           tick(node);
         }, 1000)
@@ -92,12 +95,16 @@ export var translateY = {
       var H = height + h;
       var t1 = h / speed;
       var t2 = H / speed;
-      node.style = 'transform: translateY(-' + H + 'px);' + 'webkitTransform: translateY(-' + H + 'px);transition-duration: ' + t2 + 's';
+      var style = '-webkit-transform: translateY(-' + H + 'px);' + 'transform: translateY(-' + H + 'px);transition-duration: ' + t2 + 's';
+      node.setAttribute('style', style);
+      node.setAttribute('status', 1);
+
       setTimeout(function () {
         tick(node.nextElementSibling)
       }, t1 * 1000);
       setTimeout(function () {
-        node.style = '';
+        node.setAttribute('style', '');
+        node.setAttribute('status', 0);
       }, t2 * 1000);
     }
 
