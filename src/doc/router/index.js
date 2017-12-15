@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
+const instruction = resolve => require(['../pages/instruction.vue'], resolve)
+
 const btn = resolve => require(['../pages/style-button.vue'], resolve)
 const hairline = resolve => require(['../pages/style-hairline.vue'], resolve)
 
@@ -27,6 +29,11 @@ Vue.use(Router)
 
 var router = new Router({
   routes: [
+    {
+      path: '/instruction',
+      name: 'instruction',
+      component: instruction
+    },
     {
       path: '/btn',
       name: 'btn',

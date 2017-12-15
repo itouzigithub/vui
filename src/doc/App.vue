@@ -66,7 +66,7 @@ export default {
   }
   h3 {
     font-size: 16px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
   }
   table {
     width: 100%;

@@ -1,18 +1,18 @@
 // directives
 import { 
-	increase,
-	translateX,
-	translateY
+  increase,
+  translateX,
+  translateY
 } from './lib/directives'
 
 // filters
 import { 
-	addThousandSeparator,
-	addSpace,
-	hideNumber,
-	formatDate,
-	formatTime,
-	formatDateTime
+  addThousandSeparator,
+  addSpace,
+  hideNumber,
+  formatDate,
+  formatTime,
+  formatDateTime
 } from './lib/filters'
 
 // utils
@@ -26,25 +26,25 @@ import iptNumber from './lib/widgets/input/ipt-number.vue'
 import iptPassword from './lib/widgets/input/ipt-password.vue'
 import iptSearch from './lib/widgets/input/ipt-search.vue'
 
-module.exports = {
-	// directives
-	increase,
-	translateX, 
-	translateY,
+export {
+  // directives
+  increase,
+  translateX, 
+  translateY,
   // filters
-	addThousandSeparator,
-	addSpace,
-	hideNumber,
-	formatDate,
-	formatTime,
-	formatDateTime,
-	// utils
-	imgGenerator,
+  addThousandSeparator,
+  addSpace,
+  hideNumber,
+  formatDate,
+  formatTime,
+  formatDateTime,
+  // utils
+  imgGenerator,
   // widgets
-	banner,
-	cascade,
-	iptPhone,
-	iptNumber,
-	iptPassword,
-	iptSearch
+  banner,
+  cascade,
+  iptPhone,
+  iptNumber,
+  iptPassword,
+  iptSearch
 }

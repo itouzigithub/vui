@@ -2,6 +2,10 @@
   <aside>
     <h3>移动端通用组件</h3>
     <ul>
+      <li>
+        <router-link to="instruction">使用说明</router-link>
+      </li>
+      <br>
       <li>Style</li>
       <li>
         <router-link to="btn">按钮</router-link>
