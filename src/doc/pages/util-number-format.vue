@@ -32,7 +32,7 @@
 </template>
 
 <script>
-	import { addThousandSeparator, addSpace, hideNumber } from '../filters'
+	import { addThousandSeparator, addSpace, hideNumber } from '../../lib/filters'
 	export default {
 		filters: {
 			addThousandSeparator,

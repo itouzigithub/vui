@@ -32,7 +32,7 @@
         <router-link to="numberFormat">数字号码格式化</router-link>
       </li>
       <li>
-        <router-link to="carousel-list">平滑滚动轮播</router-link>
+        <router-link to="roller">平滑滚动轮播</router-link>
       </li>
       <li>
         <router-link to="img-generator">图片生成</router-link>

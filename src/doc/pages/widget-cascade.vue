@@ -88,7 +88,7 @@ this.$refs.picker.setValues(['A', 'b', '3'])
 </template>
 
 <script>
-  import picker from './cascade-picker.vue'
+  import picker from '../../lib/widgets/cascade/cascade-picker.vue'
   export default {
     data () {
       return {

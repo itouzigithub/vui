@@ -4,7 +4,7 @@
   "description": "A Vue.js project",
   "author": "bison1994 <942915554@qq.com>",
   "private": false,
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "npm run dev",

@@ -1,26 +1,27 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-const btn = resolve => require(['@/packages/button/example.vue'], resolve)
-const hairline = resolve => require(['@/packages/hairline/example.vue'], resolve)
-const ipt = resolve => require(['@/packages/input/example.vue'], resolve)
-const cascade = resolve => require(['@/packages/cascade/example.vue'], resolve)
-const banner = resolve => require(['@/packages/banner/example.vue'], resolve)
+const btn = resolve => require(['../pages/style-button.vue'], resolve)
+const hairline = resolve => require(['../pages/style-hairline.vue'], resolve)
 
-const increase = resolve => require(['@/components/number-increase.vue'], resolve)
-const dateFormat = resolve => require(['@/components/date-format.vue'], resolve)
-const numberFormat = resolve => require(['@/components/number-format.vue'], resolve)
-const carouselList = resolve => require(['@/packages/carousel-list/example.vue'], resolve)
-const imgGenerator = resolve => require(['@/packages/img-generator/example.vue'], resolve)
+const ipt = resolve => require(['../pages/widget-input.vue'], resolve)
+const cascade = resolve => require(['../pages/widget-cascade.vue'], resolve)
+const banner = resolve => require(['../pages/widget-banner.vue'], resolve)
 
-const display = resolve => require(['@/components/catalog/display.vue'], resolve)
-const reminder = resolve => require(['@/components/catalog/reminder.vue'], resolve)
-const navigation = resolve => require(['@/components/catalog/navigation.vue'], resolve)
-const operation = resolve => require(['@/components/catalog/operation.vue'], resolve)
+const increase = resolve => require(['../pages/util-number-increase.vue'], resolve)
+const numberFormat = resolve => require(['../pages/util-number-format.vue'], resolve)
+const dateFormat = resolve => require(['../pages/util-date-format.vue'], resolve)
+const roller = resolve => require(['../pages/util-roller.vue'], resolve)
+const imgGenerator = resolve => require(['../pages/util-img-generator.vue'], resolve)
 
-const methodology = resolve => require(['@/components/architecture/methodology.vue'], resolve)
-const hierarchy = resolve => require(['@/components/architecture/hierarchy.vue'], resolve)
-const principle = resolve => require(['@/components/architecture/principle.vue'], resolve)
+const display = resolve => require(['../pages/catalog/display.vue'], resolve)
+const reminder = resolve => require(['../pages/catalog/reminder.vue'], resolve)
+const navigation = resolve => require(['../pages/catalog/navigation.vue'], resolve)
+const operation = resolve => require(['../pages/catalog/operation.vue'], resolve)
+
+const methodology = resolve => require(['../pages/architecture/methodology.vue'], resolve)
+const hierarchy = resolve => require(['../pages/architecture/hierarchy.vue'], resolve)
+const principle = resolve => require(['../pages/architecture/principle.vue'], resolve)
 
 Vue.use(Router)
 
@@ -67,9 +68,9 @@ var router = new Router({
       component: numberFormat
     },
     {
-      path: '/carousel-list',
-      name: 'carousel-list',
-      component: carouselList
+      path: '/roller',
+      name: 'roller',
+      component: roller
     },
     {
       path: '/img-generator',

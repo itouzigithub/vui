@@ -51,7 +51,7 @@
 </template>
 
 <script>
-  import { translateX, translateY } from '../../directives'
+  import { translateX, translateY } from '../../lib/directives'
   export default {
     data () {
       return {

@@ -1,7 +1,9 @@
 // utils
-import { increase } from './directives'
-import { addThousandSeparator } from './filters'
-import banner from './packages/banner/banner.vue'
+import { increase } from './lib/directives'
+import { addThousandSeparator } from './lib/filters'
+
+// widgets
+import banner from './lib/widget/banner/banner.vue'
 
 module.exports = {
 	increase,

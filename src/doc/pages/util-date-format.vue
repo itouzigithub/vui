@@ -25,7 +25,7 @@
 </template>
 
 <script>
-	import { formatDate, formatTime, formatDateTime } from '../filters'
+	import { formatDate, formatTime, formatDateTime } from '../../lib/filters'
 	export default {
 		filters: {
 			formatDate,

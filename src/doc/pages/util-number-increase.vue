@@ -37,7 +37,7 @@
 </template>
 
 <script>
-  import { increase } from '../directives'
+  import { increase } from '../../lib/directives'
   export default {
     directives: {
       increase

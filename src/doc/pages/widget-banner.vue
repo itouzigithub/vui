@@ -53,7 +53,7 @@ pics: [{
 </template>
 
 <script>
-  import banner from './banner.vue'
+  import banner from '../../lib/widgets/banner/banner.vue'
   export default {
     data () {
       return {

@@ -19,7 +19,7 @@ export default {
 }
 </script>
 
-<style src="./assets/vui.common.css"></style>
+<style src="../lib/styles/vui.common.css"></style>
 <style src="./assets/font-awesome/font-awesome.min.css"></style>
 
 <style>

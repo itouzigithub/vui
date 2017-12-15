@@ -40,13 +40,13 @@ generator(url, [{
 </template>
 
 <script>
-  import generator from '../../utils/img-generator'
+  import generator from '../../lib/utils/img-generator'
   export default {
     data () {
       return {
         src: '',
-        img1: require('../../assets/band.png'),
-        img2: require('../../assets/icon-1.png')
+        img1: require('../assets/band.png'),
+        img2: require('../assets/icon-1.png')
       }
     },
     mounted () {

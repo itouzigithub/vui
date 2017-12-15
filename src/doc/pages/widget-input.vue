@@ -82,10 +82,10 @@
 </template>
 
 <script>
-  import phone from './ipt-phone.vue'
-  import password from './ipt-password.vue'
-  import number from './ipt-number.vue'
-  import search from './ipt-search.vue'
+  import phone from '../../lib/widgets/input/ipt-phone.vue'
+  import password from '../../lib/widgets/input/ipt-password.vue'
+  import number from '../../lib/widgets/input/ipt-number.vue'
+  import search from '../../lib/widgets/input/ipt-search.vue'
   export default {
     data () {
       return {
