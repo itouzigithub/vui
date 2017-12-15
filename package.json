@@ -1,11 +1,13 @@
 {
   "name": "@itouzi/vui",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A Vue.js project",
   "author": "bison1994 <942915554@qq.com>",
   "homepage": "https://github.com/itouzigithub/vui",
   "license": "MIT",
-  "files": ["src"],
+  "files": [
+    "src"
+  ],
   "private": false,
   "main": "src/index.js",
   "scripts": {
