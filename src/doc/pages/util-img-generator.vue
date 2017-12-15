@@ -7,14 +7,15 @@
     <pre v-pre><code>/**
  * @src { String } 源图的 url，生成的图片尺寸和源图一致
  * @options { Array } 要添加的图片或文本，参见示例
+ * @needDownload { Boolean } 是否自动下载生成的图片，默认为 false
  *
  * @return { Promise } 解析完成后会 resolve base64 格式的图片数据
  */
 
 // 示例
-import generator from '../../utils/img-generator'
+import { imgGenerator } from '@itouzi/vui'
 
-generator(url, [{
+imgGenerator(url, [{
   type: 'image',  // 必须指明类型
   src: url,       // 图片 url，确保同域
   x: 180,         // 图片在源图上的横坐标
@@ -32,9 +33,13 @@ generator(url, [{
 .then(base64 => {
   // 上传给服务器，获得图片的 url 地址
   // 直接使用 POST 上传，后端 PHP 可以通过 base64_decode 方法解码
-})</code></pre>
+})
+
+// 自动下载生成的图片
+imgGenerator(url, [...], true)</code></pre>
 
     <br>
+    <p>生成的示例图片</p>
     <img :src="src">
   </section>
 </template>
@@ -64,7 +69,8 @@ generator(url, [{
         x: 240,
         y: 50,
         font: '20px Arial'
-      }]).then(data => {
+      }])
+      .then(data => {
         this.src = data;
       })
     }
