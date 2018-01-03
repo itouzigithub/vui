@@ -4,7 +4,7 @@
     <p>CSS 离散化、原子化，确保组合的灵活性</p>
     <p>CSS 配置参考</p>
 
-<pre><code>&lt;div class="btn" type="" status="" size="" disabled="">button&lt;/div>
+<pre><code v-hl>&lt;div class="btn" type="" status="" size="" disabled="">button&lt;/div>
   
 &lt;style>
   .btn {}

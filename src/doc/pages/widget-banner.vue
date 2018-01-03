@@ -2,7 +2,7 @@
   <section>
     <h3>轮播图</h3>
     <br>
-<pre><code>// 基本用法
+<pre><code v-hl>// 基本用法
 &lt;banner :pics="pics" height="350px" />
 
 // pics { Array } required
@@ -29,7 +29,7 @@ pics: [{
     <p>注意：需加上 v-if="pics.length > 1" 的条件</p>
     <p>注意：Vue2.5+ 中 scope="props" 应写为 slot-scope="props"！！！</p>
 
-<pre><code>&lt;banner :pics="pics" height="350px">
+<pre><code v-hl>&lt;banner :pics="pics" height="350px">
   &lt;template scope="props" v-if="pics.length > 1">
     &lt;div class="slot">
       &lt;i :style="{

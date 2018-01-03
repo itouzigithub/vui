@@ -8,7 +8,7 @@
       <cascade-picker ref="picker" title="选择城市" :slots="slots" @valueChanged="handleValueChange" />
     </div>
 
-<pre><code>// 参数
+<pre><code v-hl>// 参数
 // slots { Array } required
 // title { String } optional 默认值为“请选择”
 // @valueChanged 自定义事件，选中项发生变化时触发
@@ -22,7 +22,7 @@ slots: [
 ]
 </code></pre>
 
-<pre><code>// 用法参考
+<pre><code v-hl>// 用法参考
 &lt;cascade-picker ref="picker" 
   title="选择城市"
   :slots="slots" 
@@ -74,7 +74,7 @@ export default {
     <h3>编辑数据</h3>
     <br>
     <p>级联选择组件提供了一个设置选项的接口，用于编辑地址时传入参数</p>
-<pre><code>// 首先应通过 slots 传入列表数据，然后再调用该方法
+<pre><code v-hl>// 首先应通过 slots 传入列表数据，然后再调用该方法
 this.$refs.picker.setValues(['A', 'b', '3'])
 </code></pre>
 

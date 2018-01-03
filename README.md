@@ -1,7 +1,5 @@
 # vui
 
-> It's not another component library, but an exploration about what is the right way to build a component library
-
 ### Doc
 
 [Here you go](https://itouzigithub.github.io/pages/vui)

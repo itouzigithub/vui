@@ -16,13 +16,13 @@
 
     <p style="height: 50px; position: relative" class="hair-top hair-bottom"></p>
 
-<pre><code>&lt;div style="position: relative" class="hair-top hair-bottom">&lt;/div>
+<pre><code v-hl>&lt;div style="position: relative" class="hair-top hair-bottom">&lt;/div>
 </code></pre>
 		
 		<br>
     <p style="height: 50px; position: relative" class="hair-border"></p>
 
-<pre><code>&lt;div style="position: relative" class="hair-border">&lt;/div>
+<pre><code v-hl>&lt;div style="position: relative" class="hair-border">&lt;/div>
 </code></pre>
 
     <p>注意点：</p>
@@ -32,12 +32,12 @@
     <br>
     <p>已知的问题：</p>
     <p>1. 修改边框颜色略有些麻烦</p>
-<pre><code>.el:before {
+<pre><code v-hl>.el:before {
   border-color: ...
 }
 </code></pre>
     <p>2. hairline 可能会遮住 border，例如在 tab 导航组件使用 border-bottom 或 border-top 作为选中效果，为避免 hairline 遮住 border，需要手动给 hairline 设置 z-index: -1</p>
-<pre><code>.el:before {
+<pre><code v-hl>.el:before {
   z-index: -1
 }
 </code></pre>

@@ -4,7 +4,7 @@
     <p>请确保请求的图片是同域的，如果是跨域的图片，需要在服务端设置</p>
     <p>Access-Control-Allow-Origin: *</p>
 
-    <pre v-pre><code>/**
+    <pre><code v-hl>/**
  * @src { String } 源图的 url，生成的图片尺寸和源图一致
  * @options { Array } 要添加的图片或文本，参见示例
  * @needDownload { Boolean } 是否自动下载生成的图片，默认为 false

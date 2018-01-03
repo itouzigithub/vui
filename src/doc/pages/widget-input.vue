@@ -10,7 +10,7 @@
       <ipt-phone v-model="phone" />
     </div>
 
-<pre><code>&lt;div class="ipt-container">
+<pre><code v-hl>&lt;div class="ipt-container">
   &lt;ipt-phone v-model="phone" />
 &lt;/div>
 </code></pre>
@@ -21,7 +21,7 @@
       <ipt-password v-model="password" />
     </div>
 
-<pre><code>// 可选参数
+<pre><code v-hl>// 可选参数
 // @maxlength { Number } 默认为 16
 // @minlength { Number } 默认为 6
 // @placeholder { String }
@@ -34,7 +34,7 @@
     <h3>有效性验证</h3>
     <p>每个特定输入框组件必须包含 isInvalid() 方法，父组件仅需调用下列方法，即可获得校验结果</p>
 
-<pre><code>checkValidity () {
+<pre><code v-hl>checkValidity () {
   var children = this.$children;
   var res;
   for (var i = 0; i < children.length; i++) {
@@ -59,7 +59,7 @@
       <ipt-number v-model="number" />
     </div>
 
-<pre><code>// 可选参数
+<pre><code v-hl>// 可选参数
 // @isInvalidFn { Function } 自定义有效性验证函数，默认函数总是返回 false
 // @placeholder { String }
 &lt;div class="ipt-container">
@@ -74,8 +74,12 @@
     <div style="width: 375px;">
       <ipt-search v-model="search" />
     </div>
-
     <br>
+
+<pre><code v-hl>&lt;div style="width: 375px;">
+  &lt;ipt-search v-model="search" />
+&lt;/div></code></pre>
+
     <br>
     <br>
   </section>

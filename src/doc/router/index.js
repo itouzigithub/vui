@@ -119,6 +119,10 @@ var router = new Router({
       path: '/principle',
       name: 'principle',
       component: principle
+    },
+    {
+      path: '/',
+      redirect: '/instruction'
     }
   ]
 });
