@@ -21,6 +21,9 @@ export var increase = {
     var decimalPlace = match ? match[1].length : 0;
     // 20ms per tick => 50Hz
     var minUnit = +(number / (duration / 1000 * 50)).toFixed(decimalPlace);
+    if (minUnit === 0) {
+      minUnit = 1;
+    }
     var value = minUnit;
 
     function tick () {
